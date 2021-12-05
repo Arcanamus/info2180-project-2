@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <script src="js/environment.js"></script>
+
+    <link rel='stylesheet' type='text/css' href='styles.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="title-container">
+            <h1>Log In</h1>
+            <div class="underline">
+                <hr class="rounded">
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <form class="card" method="post" action="" onsubmit="return false">
+
+
+            <div>
+                <label for="email"> Email</label> <br />
+                <input name="email" type="text" required placeholder="Enter email" />
+            </div>
+
+            <div>
+                <label for="password">Password</label><br />
+                <input name="password" type="password" required placeholder="Enter password" />
+            </div>
+
+            <button class="btn" id="submit">Submit</button> <br>
+
+        </form>
+
+        <script src="js\login.js">
+
+        </script>
+    </div>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

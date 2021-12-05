@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Issue</title>
+    <script src="./../js/environment.js"></script>
+    <script src="./../js/members.js"></script>
+    <!--Stylesheet link-->
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+    <aside class="sidebar">
+        <div id="sidebar-header">
+
+            <a id="title" href="#"></i> BugMe Issue Tracker</a>
+        </div>
+        <hr class="solid">
+        <a href="./../home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="./../pages/add-user.html"><i class="fa fa-fw fa-user-plus"></i>Add User</a>
+        <a href="./../pages/create-issue.html">New Issue </a>
+        <a href="./../api/user/end-session.php"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+    </aside>
+
+    <main>
+        <div class="body">
+            <h1 id="title" class="issue-title">Loading Title..</h1>
+            <h2 id="subtitle"></h2>
+            <div class="body-flex-container">
+                <div class="card" id="issue-card" id="bodymain">
+                    <div>
+                        <p id="description">Loading Description...</p>
+                    </div>
+
+                    <div id="dateinfo">
+                        <div>
+                            <p id="issue-created"> Loading ...</p>
+                        </div>
+                        <div>
+                            <p id="issue-updated"> Loading ... </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="asidemain">
+                    <div class="card" id="asidemain-card">
+                        <div>
+                            <div>
+                                <h3> Assigned To</h3>
+                                <p id="issue-assigned-to"> </p>
+                            </div>
+                            <div>
+                                <h3> Type </h3>
+                                <p id="issue-type"> </p>
+                            </div>
+                            <div>
+                                <h3> Priority</h3>
+                                <p id="issue-priority"> </p>
+                            </div>
+                            <div>
+                                <h3> Status</h3>
+                                <p id="issue-status"> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btn-container">
+                        <button class="btn" id="closebtn">Mark as Closed</button> <br />
+                        <button class="btn" id="progbtn">Mark as In Progress</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="./../js/view-issue.js"></script>
+</body>
+
+</html>
